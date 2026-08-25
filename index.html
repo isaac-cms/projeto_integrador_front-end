@@ -3,17 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="EcoTrip — guia de turismo sustentável com destinos, experiências e dicas para viajar com consciência.">
+  <meta name="description" content="EcoTrip — turismo sustentável.">
   <title>EcoTrip | Turismo Sustentável</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
-<header class="site-header"><nav class="nav container" aria-label="Navegação principal"><a class="logo" href="#inicio">Eco<span>Trip</span></a><ul class="nav-links"><li><a href="#destinos">Destinos</a></li><li><a href="#experiencias">Experiências</a></li><li><a href="#midia">Vídeo</a></li><li><a href="#dicas">Dicas</a></li></ul></nav></header>
-<main>
-<section id="inicio" class="hero"><div class="container hero-content"><p class="eyebrow">VIAJE COM PROPÓSITO</p><h1>Descubra lugares incríveis sem deixar de cuidar deles.</h1><p class="hero-text">Um guia digital para encontrar destinos, experiências e escolhas mais sustentáveis.</p><a class="button" href="#destinos">Explorar destinos</a></div></section>
-<section id="destinos" class="section container"><div class="section-heading"><p class="eyebrow">DESTINOS</p><h2>Escolhas que aproximam você da natureza</h2><p>Ideias de viagens para quem quer conhecer novos lugares valorizando a cultura local e o meio ambiente.</p></div><div class="cards"><article class="card"><div class="card-icon">🌿</div><h3>Ecoturismo</h3><p>Trilhas, parques e experiências ao ar livre com foco na preservação.</p></article><article class="card"><div class="card-icon">🌊</div><h3>Litoral consciente</h3><p>Praias e passeios que incentivam o cuidado com os ecossistemas costeiros.</p></article><article class="card"><div class="card-icon">🏘️</div><h3>Cultura local</h3><p>Conheça histórias, gastronomia e produtores que movimentam a comunidade.</p></article></div></section>
-<section id="experiencias" class="section section-soft"><div class="container feature-grid"><div><p class="eyebrow">EXPERIÊNCIAS</p><h2>Pequenas escolhas fazem parte da viagem.</h2><p>Planejar com antecedência, respeitar os espaços naturais e priorizar negócios locais são atitudes simples que ajudam a tornar o turismo mais responsável.</p><ul class="check-list"><li>Prefira deslocamentos compartilhados ou coletivos.</li><li>Leve sua garrafa e evite descartáveis desnecessários.</li><li>Respeite trilhas, animais, moradores e regras locais.</li></ul></div><aside class="quote-card"><span>“</span><p>O melhor souvenir é a memória de um lugar que continua bonito depois da nossa visita.</p></aside></div></section>
-<section id="midia" class="section container"><div class="section-heading"><p class="eyebrow">CONTEÚDO MULTIMÍDIA</p><h2>Conheça o conceito do EcoTrip</h2><p>A seção de vídeo será adicionada nesta etapa do Projeto Integrador.</p></div></section>
-<section id="dicas" class="section section-dark"><div class="container tips"><div><p class="eyebrow">DICAS</p><h2>Antes de fazer as malas</h2></div><div class="tips-list"><div><strong>01</strong><p>Pesquise regras e áreas protegidas.</p></div><div><strong>02</strong><p>Valorize comércio e serviços locais.</p></div><div><strong>03</strong><p>Reduza resíduos durante o passeio.</p></div></div></div></section>
-</main><footer class="footer"><div class="container"><p>© 2026 EcoTrip — Projeto Integrador Front-end.</p></div></footer>
-<script src="script.js"></script></body></html>
+  <header>
+    <nav aria-label="Navegação principal">
+      <strong>EcoTrip</strong>
+      <ul>
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#dados">Dados</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>EcoTrip — Turismo Sustentável</h1>
+    <p>Um guia digital para descobrir destinos e experiências de viagem valorizando a natureza e as comunidades locais.</p>
+
+    <section id="destinos">
+      <h2>Destinos e experiências</h2>
+      <img src="assets/images/ecotrip.svg" alt="Ilustração de montanhas e paisagem natural representando o projeto EcoTrip">
+      <ul>
+        <li>Ecoturismo e trilhas</li>
+        <li>Litoral consciente</li>
+        <li>Cultura e comércio local</li>
+      </ul>
+      <p><a class="button" href="https://www.gov.br/icmbio/pt-br" target="_blank" rel="noopener noreferrer">Conhecer o ICMBio</a></p>
+    </section>
+
+    <section id="dados">
+      <h2>Exemplos de destinos brasileiros</h2>
+      <table>
+        <thead><tr><th>Destino</th><th>Estado</th><th>Tipo de experiência</th></tr></thead>
+        <tbody>
+          <tr><td>Parque Nacional da Tijuca</td><td>RJ</td><td>Natureza e trilhas</td></tr>
+          <tr><td>Parque Nacional dos Lençóis Maranhenses</td><td>MA</td><td>Paisagem e ecoturismo</td></tr>
+          <tr><td>Parque Nacional do Iguaçu</td><td>PR</td><td>Cachoeiras e natureza</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 EcoTrip — Projeto Integrador Front-end.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
