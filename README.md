@@ -1,26 +1,18 @@
-# EcoTrip — Projeto Integrador Front-end
+# Projeto Integrador — Front-end
 
-Projeto acadêmico de Front-end para Web com foco em turismo sustentável. O EcoTrip apresenta destinos, experiências e escolhas que valorizam a natureza e as comunidades locais.
+Repositório acadêmico da disciplina de Projeto Integrador Front-end.
 
-## Atividades integradas
+As atividades são mantidas separadas em pastas, com nomes profissionais e organização independente.
 
-### Aula 01 — Git e GitHub
-Fluxo de Projeto Integrador, Git, GitHub, README, `.gitignore`, branches, Conventional Commits e Pull Requests.
+## Atividades
 
-### Aula 02 — Conceitos Web e estrutura HTML
-Estrutura HTML5, lista, tabela, link externo, imagem com caminho relativo, CSS, JavaScript e página adicional `sobre.html`.
+- **Atividade 01 — Fundamentos do Desenvolvimento Web** — organização inicial, Git e GitHub.
+- **Atividade 02 — Estrutura e Semântica HTML5** — estrutura HTML5, conteúdo, navegação, imagem e formulário semântico.
 
-### Aula 03 — HTML5 semântico e formulário
-Uso de `header`, `main`, `footer`, `section`, headings hierárquicos e formulário semântico com `label`, `fieldset`, `legend`, `select`, radio, validação nativa e botão acessível.
+## Projeto
 
-### Aula 04 — Multimídia
-Vídeo HTML5 com dois formatos, poster, legendas, preload e demonstração de `canPlayType()`.
+**EcoTrip** — proposta de interface web voltada ao turismo sustentável.
 
-## Estrutura
+## Organização
 
-- `index.html` — página principal
-- `sobre.html` — página sobre o projeto
-- `css/` — estilos
-- `js/` — scripts
-- `assets/images/` — imagens
-- `media/` — recursos multimídia
+Cada atividade possui sua própria pasta para facilitar a identificação, avaliação e evolução do projeto ao longo da disciplina.
