@@ -2,10 +2,11 @@
 
 Primeira atividade do Projeto Integrador Front-end.
 
-## Objetivo
+## Conteúdo
 
-Organização inicial do projeto, versionamento com Git e GitHub e preparação da estrutura para as próximas atividades.
+- organização inicial do projeto;
+- versionamento com Git e GitHub;
+- criação e organização do repositório;
+- documentação básica.
 
-## Repositório
-
-Projeto Integrador Front-end — EcoTrip.
+Esta pasta mantém a atividade separada das demais etapas do projeto.
