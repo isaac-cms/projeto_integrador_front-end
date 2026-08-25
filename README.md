@@ -1,18 +1,30 @@
-# Projeto Integrador — Front-end
+# Projeto Integrador — Front-end para Web
 
-Repositório acadêmico da disciplina de Projeto Integrador Front-end.
+Projeto acadêmico desenvolvido na disciplina de Desenvolvimento Front-end para Web, com o tema **EcoTrip — Turismo Sustentável**.
 
-As atividades são mantidas separadas em pastas, com nomes profissionais e organização independente.
+As atividades foram mantidas separadas para preservar a evolução do projeto aula por aula e facilitar a avaliação.
 
 ## Atividades
 
-- **Atividade 01 — Fundamentos do Desenvolvimento Web** — organização inicial, Git e GitHub.
-- **Atividade 02 — Estrutura e Semântica HTML5** — estrutura HTML5, conteúdo, navegação, imagem e formulário semântico.
+### 01 — Fundamentos do Desenvolvimento Web
+Definição do tema, organização inicial, Git/GitHub, README, `.gitignore` e `index.html` inicial.
 
-## Projeto
+### 02 — Estrutura HTML5 e Conceitos Web
+Primeira versão da página com estrutura HTML5, título, descrição, lista, tabela, link externo, imagem com `alt` e organização de pastas.
 
-**EcoTrip** — proposta de interface web voltada ao turismo sustentável.
+### 03 — HTML5 Semântico e Formulários
+Refatoração semântica, hierarquia de headings, formulário temático, validação nativa, `fieldset`, `legend`, labels e acessibilidade.
 
-## Organização
+### 04 — HTML5 Multimídia
+Vídeo em MP4 e WebM, fallback de formatos, poster, legendas WebVTT, `preload` justificado e demonstração de `canPlayType()`.
 
-Cada atividade possui sua própria pasta para facilitar a identificação, avaliação e evolução do projeto ao longo da disciplina.
+## Estrutura
+
+```text
+Atividade 01 — Fundamentos do Desenvolvimento Web/
+Atividade 02 — Estrutura HTML5 e Conceitos Web/
+Atividade 03 — HTML5 Semântico e Formulários/
+Atividade 04 — HTML5 Multimídia/
+```
+
+Cada atividade possui seus próprios arquivos para que as etapas permaneçam independentes e organizadas.
