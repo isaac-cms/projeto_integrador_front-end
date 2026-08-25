@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoTrip — turismo sustentável e planejamento consciente de viagens.">
+  <title>EcoTrip | Turismo Sustentável</title>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Navegação principal">
+      <strong>EcoTrip</strong>
+      <ul>
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#planejamento">Planejamento</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+      <button type="button" aria-label="Abrir menu de navegação">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>EcoTrip — Turismo Sustentável</h1>
+
+    <section id="destinos">
+      <h2>Destinos e experiências</h2>
+      <img src="assets/images/ecotrip.svg" alt="Ilustração de montanhas e paisagem natural representando o projeto EcoTrip">
+      <p>Um guia digital para descobrir destinos e experiências de viagem valorizando a natureza e as comunidades locais.</p>
+      <ul>
+        <li>Ecoturismo e trilhas</li>
+        <li>Litoral consciente</li>
+        <li>Cultura e comércio local</li>
+      </ul>
+      <p><a class="button" href="https://www.gov.br/icmbio/pt-br" target="_blank" rel="noopener noreferrer">Conhecer o ICMBio</a></p>
+    </section>
+
+    <section id="planejamento">
+      <h2>Planeje sua experiência sustentável</h2>
+      <p>Preencha o formulário para registrar uma sugestão de viagem de acordo com suas preferências.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Dados da viagem</legend>
+          <p><label for="nome">Nome completo</label><br><input id="nome" name="nome" type="text" autocomplete="name" pattern="[A-Za-zÀ-ÿ ]{3,80}" required></p>
+          <p><label for="email">E-mail</label><br><input id="email" name="email" type="email" autocomplete="email" required></p>
+          <p><label for="data">Data pretendida</label><br><input id="data" name="data" type="date" required></p>
+          <p><label for="viajantes">Quantidade de viajantes</label><br><input id="viajantes" name="viajantes" type="number" min="1" max="20" value="1" required></p>
+          <p><label for="destino">Tipo de destino</label><br><select id="destino" name="destino" required><option value="">Selecione uma opção</option><option value="ecoturismo">Ecoturismo</option><option value="litoral">Litoral</option><option value="montanha">Montanha</option><option value="cultura">Cultura local</option><option value="aventura">Aventura</option></select></p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferência de deslocamento</legend>
+          <p>Escolha uma opção:</p>
+          <label><input type="radio" name="transporte" value="coletivo" required> Transporte coletivo</label><br>
+          <label><input type="radio" name="transporte" value="compartilhado"> Transporte compartilhado</label><br>
+          <label><input type="radio" name="transporte" value="bicicleta"> Bicicleta ou caminhada</label>
+        </fieldset>
+
+        <button type="submit">Enviar planejamento</button>
+      </form>
+    </section>
+
+    <section id="contato">
+      <h2>Contato e informações</h2>
+      <p>Consulte também a página <a href="sobre.html">Sobre o EcoTrip</a> para conhecer a proposta do projeto.</p>
+    </section>
+  </main>
+
+  <footer><p>© 2026 EcoTrip — Projeto Integrador Front-end.</p></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
