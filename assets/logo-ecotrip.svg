@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">EcoTrip — Turismo Sustentável</title>
+  <desc id="desc">Logo do EcoTrip com montanhas, lago, sol, folha e avião, representando turismo e sustentabilidade.</desc>
+  <defs>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b5d4f"/><stop offset="1" stop-color="#45a83f"/></linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#18a8d8"/><stop offset="1" stop-color="#1782c4"/></linearGradient>
+  </defs>
+  <rect width="900" height="900" rx="48" fill="#faf9f5"/>
+  <g transform="translate(80 55)">
+    <path d="M370 40a285 285 0 1 0 250 150" fill="none" stroke="url(#green)" stroke-width="28" stroke-linecap="round"/>
+    <circle cx="305" cy="220" r="45" fill="#f8ae22"/>
+    <path d="M105 370l135-105 65 58 105-91 165 138z" fill="url(#green)"/>
+    <path d="M105 385h470c-35 50-90 75-137 90-75 24-132 8-180-18-53-29-106-45-153-72z" fill="url(#water)"/>
+    <path d="M405 470c65-24 126-55 169-91-18 80-63 139-137 175-35 17-68 25-99 27 24-28 45-63 67-111z" fill="#3fa83d"/>
+    <path d="M160 425c70 2 145 2 220 0" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".9"/>
+    <path d="M220 465h80M255 500h60" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity=".9"/>
+    <path d="M535 105l76-53 48 19-53 42 15 74-25 15-32-62-53-18z" fill="#08705e"/>
+    <path d="M570 120l-39-19 14-13 47 15z" fill="#08705e"/>
+  </g>
+  <text x="450" y="690" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="108" font-weight="700" fill="#075b50">Eco<tspan fill="#42a83e">Trip</tspan></text>
+  <path d="M590 610q28-45 57-42-3 31-48 58z" fill="#42a83e"/>
+  <text x="450" y="755" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" letter-spacing="9" fill="#075b50">TURISMO SUSTENTÁVEL</text>
+</svg>
