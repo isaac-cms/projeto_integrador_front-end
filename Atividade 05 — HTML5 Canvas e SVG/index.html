@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoTrip — recursos gráficos com SVG e Canvas aplicados a indicadores de turismo sustentável.">
+  <title>EcoTrip | Gráficos e Indicadores</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="logo" href="#inicio">Eco<span>Trip</span></a>
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#svg">SVG</a></li>
+        <li><a href="#canvas">Canvas</a></li>
+        <li><a href="#conceitos">Conceitos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">ATIVIDADE 05 · RECURSOS GRÁFICOS</p>
+          <h1>Dados de viagem que também contam uma história.</h1>
+          <p class="hero-text">Nesta etapa, o EcoTrip evolui do conteúdo multimídia para gráficos desenhados diretamente pelo navegador, usando SVG e Canvas.</p>
+          <a class="button" href="#svg">Explorar recursos</a>
+        </div>
+
+        <div class="hero-badge" aria-label="Indicador visual: turismo consciente">
+          <svg viewBox="0 0 220 180" role="img" aria-labelledby="titulo-badge desc-badge">
+            <title id="titulo-badge">Selo Turismo Consciente</title>
+            <desc id="desc-badge">Selo vetorial com uma folha e a mensagem Turismo Consciente.</desc>
+            <circle cx="110" cy="90" r="78" fill="#e8f5e9" stroke="#2e7d32" stroke-width="4" />
+            <path d="M110 128 C78 111 72 76 91 53 C109 31 139 37 151 57 C162 76 145 107 110 128Z" fill="#43a047" />
+            <path d="M110 122 C112 92 124 70 143 54" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" />
+            <text x="110" y="153" text-anchor="middle" font-size="13" font-weight="700" fill="#1b5e20">TURISMO CONSCIENTE</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="svg" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">SVG · RETAINED MODE</p>
+        <h2>Indicador vetorial de sustentabilidade</h2>
+        <p>O SVG mantém cada forma como um elemento do documento. Por isso, o desenho permanece nítido e pode receber nome acessível, estilos e interações.</p>
+      </div>
+
+      <div class="visual-card">
+        <div class="svg-panel">
+          <svg viewBox="0 0 520 250" role="img" aria-labelledby="grafico-svg-titulo grafico-svg-desc">
+            <title id="grafico-svg-titulo">Indicadores de sustentabilidade do EcoTrip</title>
+            <desc id="grafico-svg-desc">Três indicadores: transporte coletivo 78 por cento, comércio local 64 por cento e redução de resíduos 52 por cento.</desc>
+            <line x1="55" y1="205" x2="490" y2="205" stroke="#78909c" stroke-width="2" />
+            <g fill="#2e7d32">
+              <rect x="80" y="49" width="80" height="156" rx="8" />
+              <rect x="220" y="77" width="80" height="128" rx="8" />
+              <rect x="360" y="101" width="80" height="104" rx="8" />
+            </g>
+            <g fill="#ffffff" font-size="18" font-weight="700" text-anchor="middle">
+              <text x="120" y="78">78%</text>
+              <text x="260" y="106">64%</text>
+              <text x="400" y="130">52%</text>
+            </g>
+            <g fill="#263238" font-size="14" text-anchor="middle">
+              <text x="120" y="228">Transporte</text>
+              <text x="260" y="228">Comércio local</text>
+              <text x="400" y="228">Menos resíduos</text>
+            </g>
+          </svg>
+        </div>
+        <div class="explanation">
+          <h3>Por que SVG?</h3>
+          <p>Cada barra é um elemento persistente do SVG. O atributo <code>viewBox</code> cria um sistema de coordenadas interno que permite redimensionar o gráfico mantendo suas proporções.</p>
+          <ul class="check-list">
+            <li>Vetorial e escalável.</li>
+            <li>Formas presentes no DOM.</li>
+            <li>Nome acessível com <code>title</code> e <code>desc</code>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="canvas" class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">CANVAS · IMMEDIATE MODE</p>
+          <h2>Gráfico animado de impacto ambiental</h2>
+          <p>O Canvas trabalha diretamente sobre uma grade de pixels. A animação abaixo redesenha o quadro com <code>clearRect()</code> e sincroniza os frames com <code>requestAnimationFrame()</code>.</p>
+        </div>
+
+        <div class="canvas-card">
+          <div class="canvas-wrapper">
+            <canvas id="impactoCanvas" width="620" height="330" role="img" aria-labelledby="canvas-titulo" aria-describedby="canvas-fallback">
+              <span id="canvas-titulo">Gráfico animado de impacto ambiental do EcoTrip.</span>
+              <span id="canvas-fallback">Indicadores: transporte coletivo 78 por cento, comércio local 64 por cento e redução de resíduos 52 por cento.</span>
+            </canvas>
+          </div>
+          <div class="canvas-info">
+            <h3>O que acontece a cada frame?</h3>
+            <ol>
+              <li>O Canvas é limpo com <code>clearRect()</code>.</li>
+              <li>As barras são redesenhadas na nova altura.</li>
+              <li><code>requestAnimationFrame()</code> agenda o próximo quadro.</li>
+            </ol>
+            <p class="note"><strong>Acessibilidade:</strong> como o Canvas não cria nós DOM para cada forma, o gráfico possui nome acessível e conteúdo alternativo textual.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="conceitos" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">APRENDIZADO</p>
+        <h2>Canvas x SVG</h2>
+      </div>
+      <div class="cards">
+        <article class="card"><h3>Raster</h3><p>O Canvas produz um resultado baseado em pixels. É adequado quando muitos elementos precisam ser redesenhados com frequência.</p></article>
+        <article class="card"><h3>Vetor</h3><p>O SVG descreve formas matemáticas que podem ser recalculadas e rasterizadas novamente em diferentes tamanhos.</p></article>
+        <article class="card"><h3>Escolha consciente</h3><p>Gráficos pequenos e interativos podem se beneficiar do SVG; animações intensas e efeitos com muitos objetos podem favorecer o Canvas.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 EcoTrip — Projeto Integrador Front-end · Atividade 05.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
