@@ -28,3 +28,7 @@ Atividade 04 — HTML5 Multimídia/
 ```
 
 Cada atividade possui seus próprios arquivos para que as etapas permaneçam independentes e organizadas.
+
+## Avaliação 
+
+O projeto respeita a ordem estabelecida pelas atividades, possuindo link, foto, vídeo e listas, conforme solicitado nas atividades. O código respeita a estrutura semântica do HTML.
