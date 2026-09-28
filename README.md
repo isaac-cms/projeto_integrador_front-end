@@ -27,6 +27,9 @@ Vídeo em MP4 e WebM, fallback de formatos, poster, legendas WebVTT, `preload` j
 ### 05 — HTML5 Canvas e SVG
 Recursos gráficos aplicados ao EcoTrip: SVG vetorial com `viewBox`, identificação acessível e elementos gráficos persistentes; Canvas com gráfico de indicadores, `clearRect()`, `requestAnimationFrame()` e conteúdo alternativo para acessibilidade.
 
+### 06 — CSS3: Sintaxe, Seletores e Estilização Base
+Aplicação de CSS externo, reset, variáveis, seletores básicos e combinadores, pseudo-classes, especificidade, box model, tipografia, links, tabelas, listas e formulários. A atividade mantém o fluxo normal do documento, sem utilizar Flexbox ou Grid como solução de layout.
+
 ## 🎨 Identidade visual
 
 A identidade do EcoTrip representa a união entre **viagem e sustentabilidade**, utilizando elementos visuais como natureza, água, montanhas, folha, sol e avião.
@@ -44,6 +47,7 @@ projeto_integrador_front-end/
 ├── Atividade 03 — HTML5 Semântico e Formulários/
 ├── Atividade 04 — HTML5 Multimídia/
 ├── Atividade 05 — HTML5 Canvas e SVG/
+├── Atividade 06 — CSS3 Sintaxe Seletores e Estilização/
 ├── README.md
 └── .gitignore
 ```
@@ -74,6 +78,7 @@ Ao longo das atividades, o projeto evoluiu de uma estrutura HTML inicial para um
 | 03 | Semântica, formulários e acessibilidade |
 | 04 | Vídeo, fontes alternativas, poster e legendas |
 | 05 | Canvas, SVG, paradigmas gráficos e animação |
+| 06 | CSS3, seletores, especificidade e Box Model |
 
 ## 🛠️ Tecnologias
 
