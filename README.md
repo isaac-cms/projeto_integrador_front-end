@@ -33,6 +33,9 @@ Aplicação de CSS externo, reset, variáveis, seletores básicos e combinadores
 ### 07 — CSS3: Pseudo-classes, Flexbox e Grid
 Aplicação de pseudo-classes de estado e posição, navegação com Flexbox, distribuição de espaço com flex-grow/flex-shrink/flex-basis, layout com Grid e áreas nomeadas, grade responsiva com auto-fit/minmax e boas práticas para evitar layout thrashing.
 
+### 08 — CSS3: Menus e Navegação
+Navbar com Flexbox, estado ativo, dropdown com :hover e :focus-within, position: sticky, contextos de empilhamento e z-index, além da estrutura acessível do botão hambúrguer (sem funcionalidade de clique, conforme o conteúdo da aula).
+
 ## 🎨 Identidade visual
 
 A identidade do EcoTrip representa a união entre **viagem e sustentabilidade**, utilizando elementos visuais como natureza, água, montanhas, folha, sol e avião.
@@ -52,6 +55,7 @@ projeto_integrador_front-end/
 ├── Atividade 05 — HTML5 Canvas e SVG/
 ├── Atividade 06 — CSS3 Sintaxe Seletores e Estilização/
 ├── Atividade 07 — CSS3 Pseudo-classes Flexbox e Grid/
+├── Atividade 08 — CSS3 Menus e Navegação/
 ├── README.md
 └── .gitignore
 ```
@@ -84,6 +88,7 @@ Ao longo das atividades, o projeto evoluiu de uma estrutura HTML inicial para um
 | 05 | Canvas, SVG, paradigmas gráficos e animação |
 | 06 | CSS3, seletores, especificidade e Box Model |
 | 07 | Pseudo-classes, Flexbox, Grid e performance de layout |
+| 08 | Menus, dropdown, sticky, z-index e navegação responsiva |
 
 ## 🛠️ Tecnologias
 
