@@ -95,6 +95,11 @@ button:focus-visible {
   padding: 36px 0 56px;
 }
 
+#destinos { grid-area: destinos; }
+#indicadores { grid-area: indicadores; }
+#flexbox { grid-area: flexbox; }
+#sobre { grid-area: sobre; }
+
 .apresentacao {
   grid-area: apresentacao;
   padding: clamp(32px, 7vw, 76px);
