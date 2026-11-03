@@ -10,7 +10,7 @@ function ajustarAlturaDosCards() {
 
   // Segunda etapa: escrita das alturas.
   cards.forEach((card, indice) => {
-    card.style.minHeight = larguras[indice] > 0 ? "auto" : "auto";
+    card.style.height = `${larguras[indice] * 0.6}px`;
   });
 }
 
