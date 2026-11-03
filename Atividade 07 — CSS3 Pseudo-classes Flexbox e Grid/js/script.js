@@ -8,9 +8,9 @@ function ajustarAlturaDosCards() {
   // Primeira etapa: leitura das larguras.
   const larguras = Array.from(cards).map((card) => card.offsetWidth);
 
-  // Segunda etapa: escrita das alturas.
+  // Segunda etapa: escrita das alturas mínimas.
   cards.forEach((card, indice) => {
-    card.style.height = `${larguras[indice] * 0.6}px`;
+    card.style.minHeight = `${larguras[indice] * 0.6}px`;
   });
 }
 
