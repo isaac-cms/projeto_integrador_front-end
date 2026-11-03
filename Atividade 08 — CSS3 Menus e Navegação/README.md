@@ -13,9 +13,6 @@ Aplicar os conceitos da Aula 08 em uma página própria do EcoTrip, criando uma 
 - **Menu hambúrguer:** botão semântico com três barras, `aria-label` e `aria-expanded="false"`, exibido em telas estreitas.
 - **Acessibilidade:** foco visível por teclado e abertura do dropdown também por foco.
 
-## Observação importante sobre o menu hambúrguer
-Conforme o material da Aula 08, o botão hambúrguer foi desenvolvido somente como estrutura visual. Ele ainda não abre nem fecha o menu ao clicar, pois essa funcionalidade depende de manipulação do DOM com JavaScript, conteúdo previsto para uma aula futura.
-
 ## Diagnóstico de posicionamento
 O cabeçalho é o elemento que cria o contexto de empilhamento da navegação. Por isso, a prioridade de camada é definida nele, em vez de tentar resolver conflitos aumentando indefinidamente o `z-index` do dropdown. O cabeçalho não possui ancestral com `overflow` restritivo, permitindo o comportamento sticky esperado.
 
