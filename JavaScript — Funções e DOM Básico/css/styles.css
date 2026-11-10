@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #24352b;
+  background: #f4f7f1;
+  line-height: 1.6;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #174b35;
+}
+
+.marca {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a {
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.apresentacao {
+  padding: 90px 8%;
+  text-align: center;
+  background: linear-gradient(135deg, #dcebd9, #f4f7f1);
+}
+
+.etiqueta {
+  color: #34764f;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 {
+  max-width: 750px;
+  margin: 15px auto;
+  color: #174b35;
+  font-size: 2.5rem;
+}
+
+.apresentacao > p:not(.etiqueta) {
+  max-width: 680px;
+  margin: 15px auto;
+}
+
+.passeios {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 65px 8%;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #174b35;
+}
+
+.resumo {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-left: 4px solid #5b936b;
+  border-radius: 5px;
+  background: #ffffff;
+  font-weight: bold;
+}
+
+.grade-passeios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.cartao {
+  padding: 20px;
+  border-left: 6px solid #5b936b;
+  border-radius: 8px;
+  background: #ffffff;
+  text-align: left;
+}
+
+.cartao h3 {
+  margin-bottom: 8px;
+  color: #174b35;
+}
+
+.selo {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Uma classe para cada faixa de disponibilidade */
+.disponivel {
+  border-left-color: #34764f;
+}
+
+.disponivel .selo {
+  background: #dcebd9;
+  color: #174b35;
+}
+
+.ultimas-vagas {
+  border-left-color: #c98a00;
+}
+
+.ultimas-vagas .selo {
+  background: #fff1c9;
+  color: #6b4a00;
+}
+
+.esgotado {
+  border-left-color: #b3382c;
+  background: #f7eeee;
+}
+
+.esgotado .selo {
+  background: #f6d5d1;
+  color: #7a1f16;
+}
+
+footer {
+  padding: 22px;
+  color: #ffffff;
+  text-align: center;
+  background: #174b35;
+}
+
+@media (max-width: 600px) {
+  .topo {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 0 8px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
