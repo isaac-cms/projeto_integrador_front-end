@@ -37,6 +37,9 @@ Navbar com Flexbox, estado ativo, dropdown, `:hover`, `:focus-within`, `position
 ### JavaScript: Lógica e Análise de Dados
 Array de objetos com destinos do EcoTrip, conversão e validação de entrada, condicionais, `switch`, laços, resumo de vagas, consulta por nome e relatório com `console.table()`.
 
+### JavaScript: Funções e DOM Básico
+Funções com `return` e parâmetro padrão, `map`, `filter` e `reduce`, `querySelector`, `createElement`, `textContent`, `append`, `classList.add` e vagas dos passeios mostradas na página.
+
 ## 🎨 Identidade visual
 
 A identidade do EcoTrip representa a união entre **viagem e sustentabilidade**, com elementos visuais ligados à natureza, água, montanhas, folhas, sol e avião. A logo está em SVG para manter a qualidade vetorial.
@@ -56,6 +59,7 @@ projeto_integrador_front-end/
 ├── CSS3 Pseudo-classes Flexbox e Grid/
 ├── CSS3 Menus e Navegação/
 ├── JavaScript — Lógica e Análise de Dados/
+├── JavaScript — Funções e DOM Básico/
 ├── Meu primeiro código HTML/
 ├── README.md
 └── .gitignore
