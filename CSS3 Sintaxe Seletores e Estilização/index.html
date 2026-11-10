@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoTrip — Atividade 06 sobre CSS3, seletores, especificidade e box model.">
+  <title>EcoTrip | Atividade 06 — CSS3</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header id="cabecalho-principal">
+    <div class="container">
+      <h1>EcoTrip — Turismo Sustentável</h1>
+      <p>Atividade 06: CSS3 — Sintaxe, Seletores e Estilização Base.</p>
+
+      <nav aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#indicadores">Indicadores</a></li>
+          <li><a href="#tabela">Tabela</a></li>
+          <li><a href="#formulario">Formulário</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <div class="container">
+
+      <section>
+        <h2>Estilização do EcoTrip</h2>
+        <p>
+          Nesta atividade, a estrutura HTML das aulas anteriores recebe uma
+          camada visual organizada com CSS3, sem utilizar Flexbox ou Grid.
+        </p>
+
+        <article class="card destaque">
+          <h3>O que foi aplicado?</h3>
+          <p>
+            Foram utilizados reset, variáveis CSS, seletores, combinadores,
+            pseudo-classes, especificidade, box model, tipografia, links,
+            tabelas, listas, bordas e fundos.
+          </p>
+          <p>
+            A ideia é demonstrar que o CSS controla a apresentação sem
+            modificar a estrutura semântica do HTML.
+          </p>
+        </article>
+      </section>
+
+      <section id="indicadores">
+        <h2>Indicadores de turismo consciente</h2>
+        <p>
+          Os indicadores abaixo representam dados demonstrativos utilizados
+          para aplicar estilos reutilizáveis por meio de classes.
+        </p>
+
+        <div class="indicador">
+          <strong>78%</strong>
+          <span>Transporte coletivo</span>
+        </div>
+
+        <div class="indicador">
+          <strong>64%</strong>
+          <span>Comércio local</span>
+        </div>
+
+        <div class="indicador">
+          <strong>52%</strong>
+          <span>Redução de resíduos</span>
+        </div>
+      </section>
+
+      <section id="tabela">
+        <h2>Tabela de impacto</h2>
+        <p>
+          A tabela demonstra border, padding, largura, alinhamento e
+          <code>:nth-child(even)</code>.
+        </p>
+
+        <table class="tabela-impacto">
+          <thead>
+            <tr>
+              <th>Prática</th>
+              <th>Indicador</th>
+              <th>Impacto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Transporte coletivo</td>
+              <td>78%</td>
+              <td>Menor emissão</td>
+            </tr>
+            <tr>
+              <td>Comércio local</td>
+              <td>64%</td>
+              <td>Economia regional</td>
+            </tr>
+            <tr>
+              <td>Menos resíduos</td>
+              <td>52%</td>
+              <td>Menor descarte</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Dicas para uma viagem mais consciente</h2>
+        <ul class="lista-dicas">
+          <li>Priorize transporte coletivo ou compartilhado.</li>
+          <li>Valorize pequenos negócios da região.</li>
+          <li>Evite desperdícios durante a viagem.</li>
+          <li>Respeite os espaços naturais visitados.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Box Model na prática</h2>
+        <p>
+          Esta caixa demonstra a diferença entre conteúdo, padding, border e
+          margin usando <code>box-sizing: border-box</code>.
+        </p>
+
+        <div class="box-model-demo">
+          <strong>Caixa do EcoTrip</strong>
+          <p>
+            Conteúdo + padding interno + borda + margem externa.
+          </p>
+        </div>
+      </section>
+
+      <section id="formulario">
+        <h2>Preferências de viagem</h2>
+
+        <form class="formulario" action="#" method="post">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="destino">Destino preferido</label>
+          <select id="destino" name="destino" required>
+            <option value="">Selecione</option>
+            <option value="praia">Praia</option>
+            <option value="montanha">Montanha</option>
+            <option value="ecoturismo">Ecoturismo</option>
+            <option value="cidade">Cidade histórica</option>
+          </select>
+
+          <label for="mensagem">O que você busca em uma viagem?</label>
+          <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+          <button class="botao" type="submit">Enviar preferência</button>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>EcoTrip — Projeto Integrador Front-end · Atividade 06.</p>
+      <p>
+        <a href="https://www.icmbio.gov.br/" target="_blank" rel="noopener noreferrer">
+          Fonte de referência: ICMBio
+        </a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
