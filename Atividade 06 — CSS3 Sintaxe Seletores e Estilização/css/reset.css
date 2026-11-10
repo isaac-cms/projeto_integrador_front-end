@@ -1,8 +1,0 @@
-/* Reset básico da Atividade 06
-   O box-sizing border-box deixa largura e altura mais previsíveis. */
-
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
