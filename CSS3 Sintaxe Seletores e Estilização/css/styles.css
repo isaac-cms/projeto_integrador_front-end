@@ -1,0 +1,354 @@
+/* =========================================================
+   ATIVIDADE 06 — CSS3
+   Sintaxe, seletores, especificidade e estilização base
+   Tema: EcoTrip — Turismo Sustentável
+   ========================================================= */
+
+:root {
+  --cor-primaria: #2e7d32;
+  --cor-primaria-escura: #1b5e20;
+  --cor-acento: #f59e0b;
+  --cor-texto: #263238;
+  --cor-texto-suave: #607d8b;
+  --cor-fundo: #f5f8f5;
+  --cor-card: #ffffff;
+  --cor-borda: #d7e2da;
+  --raio: 12px;
+  --sombra: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+/* ===== CONTAINER ===== */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ===== CABEÇALHO ===== */
+
+#cabecalho-principal {
+  background-color: var(--cor-primaria-escura);
+  color: #ffffff;
+  padding: 1.5rem 0;
+}
+
+#cabecalho-principal h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#cabecalho-principal p {
+  color: #e8f5e9;
+}
+
+/* ===== NAVEGAÇÃO ===== */
+
+.nav-list {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-list a:link {
+  color: #ffffff;
+}
+
+.nav-list a:visited {
+  color: #dcedc8;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+.nav-list a:active {
+  color: var(--cor-acento);
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+
+main {
+  padding: 2rem 0;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+section > h2 {
+  color: var(--cor-primaria-escura);
+  margin-bottom: 0.75rem;
+}
+
+/* article p = qualquer parágrafo dentro de article */
+article p {
+  color: var(--cor-texto-suave);
+}
+
+/* article > p = apenas parágrafo filho direto */
+article > p {
+  font-size: 1rem;
+}
+
+/* h2 + p = parágrafo imediatamente depois de um h2 */
+h2 + p {
+  margin-top: 0.25rem;
+}
+
+/* h3 ~ p = todos os parágrafos irmãos depois de um h3 */
+h3 ~ p {
+  color: var(--cor-texto-suave);
+}
+
+/* ===== CARDS ===== */
+
+.card {
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  color: var(--cor-primaria);
+  margin-bottom: 0.5rem;
+}
+
+/* Demonstração de especificidade:
+   .card .destaque tem 20 pontos e vence .destaque, que tem 10. */
+.destaque {
+  border-left: 5px solid var(--cor-acento);
+}
+
+.card .destaque {
+  background-color: #fff8e1;
+}
+
+/* ===== INDICADORES ===== */
+
+#indicadores {
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.indicador {
+  display: inline-block;
+  width: 31%;
+  vertical-align: top;
+  margin-right: 2%;
+  padding: 1rem;
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  background-color: #f8fbf8;
+}
+
+/* Remove o espaço lateral do último indicador */
+.indicador:last-child {
+  margin-right: 0;
+}
+
+.indicador strong {
+  display: block;
+  color: var(--cor-primaria);
+  font-size: 1.6rem;
+}
+
+.indicador:nth-child(even) {
+  background-color: #eef7ef;
+}
+
+/* ===== TABELA ===== */
+
+.tabela-impacto {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.tabela-impacto th,
+.tabela-impacto td {
+  border: 1px solid var(--cor-borda);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.tabela-impacto th {
+  background-color: #e8f5e9;
+  color: var(--cor-primaria-escura);
+}
+
+.tabela-impacto tr:nth-child(even) {
+  background-color: #f8faf8;
+}
+
+/* ===== LISTA ===== */
+
+.lista-dicas {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+.lista-dicas li {
+  padding: 0.25rem 0;
+}
+
+.lista-dicas li:first-child {
+  font-weight: 700;
+}
+
+.lista-dicas li:last-child {
+  border-bottom: none;
+}
+
+/* ===== FORMULÁRIO ===== */
+
+.formulario {
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: 1.5rem;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 0.7rem;
+  border: 1px solid #b0bec5;
+  border-radius: 8px;
+  font: inherit;
+  background-color: #ffffff;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  outline: 2px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: 0;
+  border-radius: 8px;
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: var(--cor-primaria-escura);
+}
+
+.botao:active {
+  background-color: var(--cor-acento);
+}
+
+/* ===== BOX MODEL ===== */
+
+.box-model-demo {
+  width: 100%;
+  padding: 1.25rem;
+  border: 2px solid var(--cor-primaria);
+  margin-top: 1rem;
+  background-color: #e8f5e9;
+}
+
+.box-model-demo strong {
+  color: var(--cor-primaria-escura);
+}
+
+/* ===== RODAPÉ ===== */
+
+footer {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  background-color: var(--cor-primaria-escura);
+  color: #e8f5e9;
+}
+
+footer a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: #dcedc8;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:active {
+  color: var(--cor-acento);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+@media (max-width: 720px) {
+  .indicador {
+    display: block;
+    width: 100%;
+    margin: 0 0 1rem;
+  }
+
+  .nav-list li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .tabela-impacto {
+    font-size: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

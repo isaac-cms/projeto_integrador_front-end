@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore o EcoTrip e conheça destinos de turismo sustentável.">
+  <title>EcoTrip | Menus e Navegação</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="navbar" aria-label="Navegação principal">
+      <a class="logo" href="#inicio">🌱 EcoTrip</a>
+
+      <button class="menu-hamburguer" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span class="barra"></span>
+        <span class="barra"></span>
+        <span class="barra"></span>
+      </button>
+
+      <ul class="menu">
+        <li><a class="ativo" href="#inicio" aria-current="page">Início</a></li>
+        <li class="tem-dropdown">
+          <a href="#destinos">Destinos ▾</a>
+          <ul class="dropdown">
+            <li><a href="#chapada">Chapada dos Veadeiros</a></li>
+            <li><a href="#noronha">Fernando de Noronha</a></li>
+            <li><a href="#amazonia">Floresta Amazônica</a></li>
+          </ul>
+        </li>
+        <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <p class="etiqueta">Turismo consciente</p>
+      <h1>Viaje para descobrir. Preserve para continuar.</h1>
+      <p>Conheça lugares incríveis e valorize experiências que respeitam a natureza e as comunidades locais.</p>
+      <a class="botao" href="#destinos">Explorar destinos</a>
+    </section>
+
+    <section class="secao" id="destinos">
+      <p class="etiqueta">Inspire sua próxima viagem</p>
+      <h2>Destinos para conhecer</h2>
+      <div class="grade-destinos">
+        <article class="card" id="chapada">
+          <div class="foto foto-chapada" role="img" aria-label="Paisagem verde de montanhas e cachoeiras"></div>
+          <div class="conteudo">
+            <h3>Chapada dos Veadeiros</h3>
+            <p>Trilhas, cachoeiras e contato com a biodiversidade do Cerrado.</p>
+            <a href="https://www.icmbio.gov.br/" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+          </div>
+        </article>
+        <article class="card" id="noronha">
+          <div class="foto foto-noronha" role="img" aria-label="Praia de águas claras e vegetação tropical"></div>
+          <div class="conteudo">
+            <h3>Fernando de Noronha</h3>
+            <p>Belezas naturais e cuidado com a preservação marinha.</p>
+            <a href="https://www.icmbio.gov.br/" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+          </div>
+        </article>
+        <article class="card" id="amazonia">
+          <div class="foto foto-amazonia" role="img" aria-label="Floresta tropical densa e verde"></div>
+          <div class="conteudo">
+            <h3>Floresta Amazônica</h3>
+            <p>Uma experiência de conexão com a maior floresta tropical.</p>
+            <a href="https://www.icmbio.gov.br/" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao destaque" id="sustentabilidade">
+      <p class="etiqueta">Nosso compromisso</p>
+      <h2>Turismo que respeita o meio ambiente</h2>
+      <p>Planejar uma viagem também é pensar no impacto das nossas escolhas. Prefira negócios locais, respeite as regras das áreas naturais e reduza a produção de resíduos.</p>
+    </section>
+
+    <section class="secao sobre" id="sobre">
+      <h2>Sobre o EcoTrip</h2>
+      <p>O EcoTrip é um projeto acadêmico que apresenta destinos e incentiva práticas de turismo sustentável.</p>
+      <a class="botao" href="#inicio">Voltar ao início</a>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© 2026 EcoTrip — Viaje com propósito. 🌱</p>
+    <p>Projeto acadêmico de Desenvolvimento Front-end para Web.</p>
+  </footer>
+</body>
+</html>

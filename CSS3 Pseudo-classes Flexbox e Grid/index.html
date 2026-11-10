@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoTrip: destinos e experiências de turismo sustentável.">
+  <title>EcoTrip | Atividade 07 - Flexbox e Grid</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="topo" id="inicio">
+    <a class="marca" href="#inicio" aria-label="EcoTrip - início">🌱 EcoTrip</a>
+    <nav class="navegacao" aria-label="Navegação principal">
+      <a href="#destinos">Destinos</a>
+      <a href="#indicadores">Indicadores</a>
+      <a href="#flexbox">Flexbox</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+  </header>
+
+  <main class="pagina">
+    <section class="apresentacao">
+      <p class="etiqueta">Turismo consciente</p>
+      <h1>Descubra lugares incríveis e viaje com propósito.</h1>
+      <p>Conheça destinos que valorizam a natureza e experiências mais responsáveis.</p>
+      <a class="botao" href="#destinos">Explorar destinos</a>
+    </section>
+
+    <section class="secao" id="destinos">
+      <div class="cabecalho-secao">
+        <div>
+          <p class="etiqueta">Inspire sua próxima viagem</p>
+          <h2>Destinos sustentáveis</h2>
+        </div>
+        <p class="texto-apoio">Uma grade que se adapta ao espaço disponível.</p>
+      </div>
+
+      <div class="grade-destinos">
+        <article class="card-destino">
+          <div class="imagem-destino imagem-chapada" role="img" aria-label="Paisagem de montanhas e cachoeiras"></div>
+          <div class="conteudo-card">
+            <span class="categoria">Natureza</span>
+            <h3>Chapada dos Veadeiros</h3>
+            <p>Trilhas, cachoeiras e contato com o Cerrado.</p>
+            <a href="https://www.icmbio.gov.br/" target="_blank" rel="noopener noreferrer">Conhecer mais</a>
+          </div>
+        </article>
+
+        <article class="card-destino">
+          <div class="imagem-destino imagem-praia" role="img" aria-label="Praia de águas claras cercada por vegetação"></div>
+          <div class="conteudo-card">
+            <span class="categoria">Praia</span>
+            <h3>Fernando de Noronha</h3>
+            <p>Preservação marinha e paisagens naturais.</p>
+            <a href="https://www.icmbio.gov.br/" target="_blank" rel="noopener noreferrer">Conhecer mais</a>
+          </div>
+        </article>
+
+        <article class="card-destino">
+          <div class="imagem-destino imagem-floresta" role="img" aria-label="Floresta verde com vegetação abundante"></div>
+          <div class="conteudo-card">
+            <span class="categoria">Ecoturismo</span>
+            <h3>Floresta Amazônica</h3>
+            <p>Biodiversidade e experiências de educação ambiental.</p>
+            <a href="https://www.icmbio.gov.br/" target="_blank" rel="noopener noreferrer">Conhecer mais</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao indicadores" id="indicadores">
+      <p class="etiqueta">Nosso compromisso</p>
+      <h2>Pequenas escolhas, grandes impactos</h2>
+      <div class="grade-indicadores">
+        <article class="indicador"><strong>78%</strong><span>preferem experiências em contato com a natureza</span></article>
+        <article class="indicador"><strong>64%</strong><span>consideram importante reduzir resíduos</span></article>
+        <article class="indicador"><strong>52%</strong><span>buscam conhecer iniciativas locais</span></article>
+      </div>
+      <p class="observacao">Números ilustrativos utilizados para demonstrar a organização dos elementos com CSS Grid.</p>
+    </section>
+
+    <section class="secao exemplo-flex" id="flexbox">
+      <p class="etiqueta">Demonstração prática</p>
+      <h2>Como o Flexbox distribui o espaço</h2>
+      <p>Os três itens abaixo possuem flex-basis de 150px. Em um container de 1000px, sobram 550px, distribuídos conforme os fatores de crescimento 1, 3 e 1.</p>
+      <div class="container-flex">
+        <div class="item-flex item-a"><strong>A</strong><span>flex-grow: 1</span><small>260px</small></div>
+        <div class="item-flex item-b"><strong>B</strong><span>flex-grow: 3</span><small>480px</small></div>
+        <div class="item-flex item-c"><strong>C</strong><span>flex-grow: 1</span><small>260px</small></div>
+      </div>
+      <p class="observacao">Cálculo: 1000 - (150 + 150 + 150) = 550px livres. O item B recebe 3/5 do espaço livre; A e C recebem 1/5 cada.</p>
+    </section>
+
+    <section class="secao sobre" id="sobre">
+      <h2>Viajar bem também é preservar.</h2>
+      <p>O EcoTrip incentiva escolhas que respeitam o meio ambiente, valorizam comunidades locais e tornam cada viagem uma experiência mais consciente.</p>
+      <a class="botao botao-secundario" href="#inicio">Voltar ao início</a>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© 2026 EcoTrip — Viaje com propósito. 🌱</p>
+    <p>Projeto acadêmico de Desenvolvimento Front-end para Web.</p>
+  </footer>
+</body>
+</html>
