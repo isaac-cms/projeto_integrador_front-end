@@ -6,41 +6,40 @@
 
 <p align="center"><strong>Projeto Integrador — Desenvolvimento Front-end para Web</strong></p>
 
-Projeto acadêmico desenvolvido na disciplina de **Desenvolvimento Front-end para Web**, com o tema **EcoTrip — Turismo Sustentável**.
+Projeto acadêmico com o tema **EcoTrip — Turismo Sustentável**, desenvolvido progressivamente durante as aulas. Cada conteúdo fica em sua própria pasta, mostrando a evolução do projeto.
 
-A proposta foi construída progressivamente ao longo das aulas, mantendo cada atividade separada para preservar a evolução do projeto, facilitar a avaliação e demonstrar a aplicação prática dos conteúdos estudados.
+## 📚 Conteúdos desenvolvidos
 
-## 📚 Atividades
+### Fundamentos do Desenvolvimento Web
+Organização inicial, Git/GitHub, README, `.gitignore` e estrutura da página.
 
-### 01 — Fundamentos do Desenvolvimento Web
-Definição do tema, organização inicial do projeto, Git/GitHub, README, `.gitignore` e `index.html` inicial.
+### Estrutura HTML5 e Conceitos Web
+Metadados, títulos, parágrafos, listas, tabela, links, imagens e organização de pastas.
 
-### 02 — Estrutura HTML5 e Conceitos Web
-Estrutura HTML5, metadados, títulos, parágrafos, listas, tabela, link externo, imagem com `alt` e organização de pastas.
+### HTML5 Semântico e Formulários
+Elementos semânticos, formulários, validação nativa e acessibilidade.
 
-### 03 — HTML5 Semântico e Formulários
-Estrutura semântica, hierarquia de headings, formulário temático, validação nativa, `fieldset`, `legend`, labels e práticas de acessibilidade.
+### HTML5 Multimídia
+Vídeo, formatos alternativos, poster, legendas WebVTT e `canPlayType()`.
 
-### 04 — HTML5 Multimídia
-Vídeo em MP4 e WebM, fallback de formatos, poster, legendas WebVTT, `preload` justificado e verificação de suporte com `canPlayType()`.
+### HTML5 Canvas e SVG
+Gráficos vetoriais, Canvas, `clearRect()`, `requestAnimationFrame()` e acessibilidade.
 
-### 05 — HTML5 Canvas e SVG
-Recursos gráficos aplicados ao EcoTrip: SVG vetorial com `viewBox`, identificação acessível e elementos gráficos persistentes; Canvas com gráfico de indicadores, `clearRect()`, `requestAnimationFrame()` e conteúdo alternativo para acessibilidade.
+### CSS3: Sintaxe, Seletores e Estilização
+CSS externo, reset, variáveis, seletores, especificidade, box model, tipografia, links, tabelas e formulários.
 
-### 06 — CSS3: Sintaxe, Seletores e Estilização Base
-Aplicação de CSS externo, reset, variáveis, seletores básicos e combinadores, pseudo-classes, especificidade, box model, tipografia, links, tabelas, listas e formulários. A atividade mantém o fluxo normal do documento, sem utilizar Flexbox ou Grid como solução de layout.
+### CSS3: Pseudo-classes, Flexbox e Grid
+Pseudo-classes, Flexbox, flex-grow/flex-shrink/flex-basis, Grid, áreas nomeadas e grade responsiva.
 
-### 07 — CSS3: Pseudo-classes, Flexbox e Grid
-Aplicação de pseudo-classes de estado e posição, navegação com Flexbox, distribuição de espaço com flex-grow/flex-shrink/flex-basis, layout com Grid e áreas nomeadas, grade responsiva com auto-fit/minmax e boas práticas para evitar layout thrashing.
+### CSS3: Menus e Navegação
+Navbar com Flexbox, estado ativo, dropdown, `:hover`, `:focus-within`, `position: sticky` e `z-index`.
 
-### 08 — CSS3: Menus e Navegação
-Navbar com Flexbox, estado ativo, dropdown com :hover e :focus-within, position: sticky, contextos de empilhamento e z-index, além da estrutura acessível do botão hambúrguer (sem funcionalidade de clique, conforme o conteúdo da aula).
+### JavaScript: Lógica e Análise de Dados
+Array de objetos com destinos do EcoTrip, conversão e validação de entrada, condicionais, `switch`, laços, resumo de vagas, consulta por nome e relatório com `console.table()`.
 
 ## 🎨 Identidade visual
 
-A identidade do EcoTrip representa a união entre **viagem e sustentabilidade**, utilizando elementos visuais como natureza, água, montanhas, folha, sol e avião.
-
-A logo foi disponibilizada em **SVG**, mantendo qualidade vetorial e permitindo sua utilização tanto na documentação quanto na interface do projeto.
+A identidade do EcoTrip representa a união entre **viagem e sustentabilidade**, com elementos visuais ligados à natureza, água, montanhas, folhas, sol e avião. A logo está em SVG para manter a qualidade vetorial.
 
 ## 📁 Estrutura do projeto
 
@@ -48,62 +47,26 @@ A logo foi disponibilizada em **SVG**, mantendo qualidade vetorial e permitindo 
 projeto_integrador_front-end/
 ├── assets/
 │   └── logo-ecotrip.svg
-├── Atividade 01 — Fundamentos do Desenvolvimento Web/
-├── Atividade 02 — Estrutura HTML5 e Conceitos Web/
-├── Atividade 03 — HTML5 Semântico e Formulários/
-├── Atividade 04 — HTML5 Multimídia/
-├── Atividade 05 — HTML5 Canvas e SVG/
-├── Atividade 06 — CSS3 Sintaxe Seletores e Estilização/
-├── Atividade 07 — CSS3 Pseudo-classes Flexbox e Grid/
-├── Atividade 08 — CSS3 Menus e Navegação/
+├── Fundamentos do Desenvolvimento Web/
+├── Estrutura HTML5 e Conceitos Web/
+├── HTML5 Semântico e Formulários/
+├── HTML5 Multimídia/
+├── HTML5 Canvas e SVG/
+├── CSS3 Sintaxe Seletores e Estilização/
+├── CSS3 Pseudo-classes Flexbox e Grid/
+├── CSS3 Menus e Navegação/
+├── JavaScript — Lógica e Análise de Dados/
+├── Meu primeiro código HTML/
 ├── README.md
 └── .gitignore
 ```
 
-Cada atividade possui seus próprios arquivos, mantendo a evolução do projeto independente e permitindo visualizar claramente o conteúdo desenvolvido em cada aula.
+## 🛠️ Tecnologias
+
+HTML5 · CSS3 · JavaScript · SVG · Canvas API · Git · GitHub
 
 ## 🌱 Sobre o EcoTrip
 
-O **EcoTrip** é um projeto acadêmico de turismo sustentável voltado à apresentação de destinos, experiências e escolhas mais conscientes durante uma viagem.
+O EcoTrip é uma proposta de turismo sustentável que apresenta destinos e incentiva escolhas mais conscientes, valorizando a natureza e as comunidades locais.
 
-Ao longo das atividades, o projeto evoluiu de uma estrutura HTML inicial para uma aplicação demonstrativa que reúne:
-
-- 🌿 Estrutura e organização de páginas web;
-- ♿ Semântica e acessibilidade;
-- 📝 Formulários e validação nativa;
-- 🎬 Recursos multimídia;
-- 🎨 Gráficos vetoriais com SVG;
-- 📊 Gráficos desenhados com Canvas;
-- ✨ Animações com `requestAnimationFrame()`;
-- 🔀 Versionamento e organização com Git/GitHub.
-
-## 🧠 Evolução técnica
-
-| Atividade | Principal aprendizado |
-|---|---|
-| 01 | Git, GitHub e organização do projeto |
-| 02 | Estrutura e elementos fundamentais do HTML5 |
-| 03 | Semântica, formulários e acessibilidade |
-| 04 | Vídeo, fontes alternativas, poster e legendas |
-| 05 | Canvas, SVG, paradigmas gráficos e animação |
-| 06 | CSS3, seletores, especificidade e Box Model |
-| 07 | Pseudo-classes, Flexbox, Grid e performance de layout |
-| 08 | Menus, dropdown, sticky, z-index e navegação responsiva |
-
-## 🛠️ Tecnologias
-
-- HTML5
-- CSS3
-- JavaScript
-- SVG
-- Canvas API
-- Git
-- GitHub
-
-## 🚀 Objetivo
-
-Construir uma base sólida em **desenvolvimento Front-end para Web**, aplicando progressivamente os conceitos apresentados em aula e mantendo um histórico organizado e profissional no GitHub.
-
----
-
-<p align="center"><strong>EcoTrip — Viaje com propósito. 🌱✈️</strong></p>
+**EcoTrip — Viaje com propósito. 🌱✈️**
